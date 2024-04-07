@@ -31,6 +31,11 @@
               <a class="current header-menu-lfirst" href="./index.html"
                 >Studio</a
               >
+              <a class="mob-menu-one">
+                <svg class="mob-menu-btm" width="24" height="24">
+                  <use href="./images/icons.svg#mobilebtm"></use>
+                </svg>
+              </a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-lfirst" href="">Portfolio</a>
@@ -315,18 +320,30 @@
             <li class="portfolio-item">
               <div class="open-title">
                 <img
+                  id="banking-pc"
                   class="portfolio-image"
+                  srcset="./images/bank.jpg 1x, ./images/banking360-2x.jpg 2x"
                   src="./images/bank.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
                 />
+
+                <!-- ---------змінити
+                  всі
+                  зображення
+                  нa
+                  1х
+                  і
+                  2х--------->
+
                 <p class="new-card">
                   - 14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
+
               <div class="cont-item">
                 <h3 class="portfolio-item-title">Banking App</h3>
                 <p class="portfolio-subtitle">App</p>
@@ -335,6 +352,7 @@
             <li class="portfolio-item">
               <div class="open-title">
                 <img
+                  id="payment-pc"
                   class="portfolio-image"
                   src="./images/cash.jpg"
                   alt="Cashless Payment"
@@ -355,6 +373,7 @@
             <li class="portfolio-item">
               <div class="open-title">
                 <img
+                  id="meditation-pc"
                   class="portfolio-image"
                   src="./images/medi.jpg"
                   alt="Meditation App"
@@ -375,6 +394,7 @@
             <li class="portfolio-item">
               <div class="open-title">
                 <img
+                  id="taxi-pc"
                   class="portfolio-image-4"
                   src="./images/taxi.jpg"
                   alt="Taxi Service"
@@ -395,6 +415,7 @@
             <li class="portfolio-item">
               <div class="open-title">
                 <img
+                  id="screen-pc"
                   class="portfolio-image"
                   src="./images/screen.jpg"
                   alt="Screen Illustrations"
@@ -415,6 +436,7 @@
             <li class="portfolio-item">
               <div class="open-title">
                 <img
+                  id="online-pc"
                   class="portfolio-image"
                   src="./images/online.jpg"
                   alt="Online Courses"
@@ -599,14 +621,80 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-
-              <a href="" class="check-link">Privacy Policy</a>
+              <span class="policy2">
+                I accept the terms and conditions of the<a
+                  href=""
+                  class="check-link"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
 
           <button class="button-modal-form" type="button">Send</button>
         </form>
+      </div>
+      <div class="modal-overlay"></div>
+    </div>
+
+    <div class="backdrop-mob">
+      <div class="mobile-menu">
+        <button type="button" class="mob-close-button">
+          <svg class="close-butt-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-buttX"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list">
+          <li><a href="./index.html" class="mob-menu-act">Studio</a></li>
+          <li><a href="" class="mob-menu-inact">Portfolio</a></li>
+          <li><a href="" class="mob-menu-inact">Contacts</a></li>
+        </ul>
+        <div class="mob-down">
+          <address class="mob-address">
+            <ul class="mob-contacts-list">
+              <li>
+                <a href="tel:+110001111111" class="mob-header-cont"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-header-cont"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icons-list">
+            <li class="footer-icons-item">
+              <a class="footer-link-oval" href="instagram">
+                <svg class="footer-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-item">
+              <a class="footer-link-oval" href="twitter">
+                <svg class="footer-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-item">
+              <a class="footer-link-oval" href="facebook">
+                <svg class="footer-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-item">
+              <a class="footer-link-oval" href="linkedin">
+                <svg class="footer-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
