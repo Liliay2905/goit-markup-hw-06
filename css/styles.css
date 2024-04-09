@@ -68,10 +68,15 @@ section {
   text-transform: uppercase;
   color: #4d5ae5;
   padding: 0;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-decoration: none;
 }
 
 .logo-stu {
   color: #2e2f42;
+  display: inline-block;
 }
 
 .header-menu-list {
@@ -143,122 +148,7 @@ section {
 .header-contact-link:focus {
   color: #404bbf;
 }
-.mob-menu-one {
-  display: flex;
-  padding: 16px 0;
-}
-.backdrop-mob {
-  position: fixed;
-  opacity: 0;
-  left: 0;
-  top: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop-mob .is-open {
-  position: fixed;
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-  background-color: rgba(46, 47, 66, 0.4);
-  width: 100%;
-  height: 100%;
-}
-.mobile-menu {
-  position: fixed;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: white;
-  padding: 72px 16px 40px;
-  top: 0;
-  left: calc(50% - 160px);
-  min-width: 320px;
-  width: 320px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-.mob-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.mob-close-button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 0;
-  cursor: pointer;
-}
-
-.mob-close-button:hover,
-.mob-close-button:focus,
-.mob-close-button:active {
-  background-color: #404bbf;
-}
-
-.mob-close-button:hover .close-butt-icon,
-.mob-close-button:focus .close-butt-icon,
-.mob-close-button:active .close-butt-icon {
-  fill: #ffffff;
-}
-.mob-menu-act {
-  display: flex;
-  color: #404bbf;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.008em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mob-menu-inact {
-  display: flex;
-  color: #2e2f42;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.008em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-contacts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 48px;
-}
-
-.mob-header-cont {
-  color: #434455;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0.016em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mob-icons-list {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
 /*hero==========*/
 .hero {
   /* box-sizing: content-box; */
@@ -409,6 +299,7 @@ section {
   justify-content: center;
   flex-direction: column;
   gap: 32px;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -423,21 +314,23 @@ section {
   margin-bottom: 72px;
 }
 
-/* * *
 .team-list {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 72px;
+  /* flex-direction: row; 
+  gap: 72px;*/
 }
-*/
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  height: 428px;
+  width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-/* * */
+
 .cont-team {
   border-radius: 0px 0px 4px;
   padding-top: 32px;
@@ -445,11 +338,9 @@ section {
 }
 
 .team-image {
-}
-/*background-color: #ffffff;
+  background-color: #ffffff;
   border-radius: 0px, 0px, 4px, 4px;
-  
-/* }* */
+}
 
 .team-item-title {
   font-weight: 500;
@@ -461,6 +352,7 @@ section {
   margin-bottom: 8px;
 }
 .team-subtitle {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -507,13 +399,12 @@ section {
 .team-contact-icon {
   fill: #f4f4fd;
 }
-/*portfolio=======================
+/*portfolio=======================*/
 
 .portfolio {
-  padding: 120px 0px 120px 0px;
-  
-}*/
-
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -528,11 +419,12 @@ section {
 
 .portfolio-list {
   flex-direction: column;
-  /* display: flex;
-   justify-content: center; */
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  /*flex-wrap: wrap;
   gap: 24px;
-  row-gap: 48px;
+  row-*/
+  gap: 48px;
 }
 .portfolio-list img {
   height: 100%;
@@ -544,6 +436,7 @@ img {
 }
 .portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
 }
 .portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -572,15 +465,15 @@ img {
   text-align: left;
 }
 .portfolio-subtitle {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-/*
 .portfolio-subtitle:hover {
   transform: translateY(0%);
-}*/
+}
 
 .open-title {
   position: relative;
@@ -632,20 +525,30 @@ img {
 #online-pc {
   display: none;
 }
-/* 
+
 .open-title:hover .new-card {
   transform: translateY(0%);
 }
 .new-card:hover {
-  
-} */
+}
 
 /*footer-flow===================*/
+.flow {
+  background: #2e2f42;
+  padding: 100px 0;
+}
 .flow .container {
   display: flex;
   flex-wrap: wrap;
   row-gap: 72px;
   max-width: 320px;
+}
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .flow-logo {
@@ -660,6 +563,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+  padding: 0;
+  margin-right: 0;
+  text-decoration: none;
 }
 .flow-logo-stu {
   color: #f4f4fd;
@@ -667,6 +573,7 @@ img {
 }
 
 .flow-subtitle {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -731,7 +638,9 @@ img {
   fill: #f4f4fd;
 }
 .logo-f {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .flow-icons {
   display: flex;
@@ -820,54 +729,55 @@ img {
   margin: 0 auto;
   padding: 0 16px;
 }
-/*
+
 .backdrop {
   opacity: 0;
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   /* width: 100%;
   height: 100%;
   background: #2e2f4266 40%; */
-visibility: hidden;
-pointer-events: none;
-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
- {
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } /*/
- /*
-backdrop.is-open {
-    background-color: rgba(46, 47, 66, 0.4);
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-}
-/*
-.is-open {
-  /* opacity: 1;
-  visibility: visible;
-  pointer-events: auto; 
-}*/
+/* це внизурозкоментувала, перед тим лише модал відкривала */
 
-/* .modal {
-position: fixed;
-    background: #fcfcfc;
-    top: 50%;
-    left: 50%;
-    width: calc(100% - 32px);
-    max-width: 408px;
-    height: auto;
-    max-height: 623px;
-    margin: auto;
-    border-radius: 4px;
-    padding: 72px 15px 24px 16px;
-    transform: translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.backdrop.is-open {
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
 }
-потім це відкрити , коли закінчу моб */
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: fixed;
+  background: #fcfcfc;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 32px);
+  max-width: 408px;
+  height: auto;
+  max-height: 623px;
+  margin: auto;
+  border-radius: 4px;
+  padding: 72px 15px 24px 16px;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* потім це відкрити, 
+коли закінчу моб */
 .xbutton {
   position: absolute;
   top: 24px;
@@ -919,7 +829,125 @@ button {
   font-family: inherit;
   line-height: inherit;
 } */
+/* ===============menu mobil================ */
+.mob-menu-one {
+  display: flex;
+  padding: 16px 0;
+}
+.backdrop-mob {
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-mob .is-open {
+  position: fixed;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  background-color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.mobile-menu {
+  position: fixed;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: white;
+  padding: 72px 16px 40px;
+  top: 0;
+  left: calc(50% - 160px);
+  min-width: 320px;
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mob-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  cursor: pointer;
+}
+
+.mob-close-button:hover,
+.mob-close-button:focus,
+.mob-close-button:active {
+  background-color: #404bbf;
+}
+
+.mob-close-button:hover .close-butt-icon,
+.mob-close-button:focus .close-butt-icon,
+.mob-close-button:active .close-butt-icon {
+  fill: #ffffff;
+}
+.mob-menu-act {
+  display: flex;
+  color: #404bbf;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.008em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-inact {
+  display: flex;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.008em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.mob-header-cont {
+  color: #434455;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.016em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* =================formaaaaa=============== */
 .form {
 }
 /* border-radius: 4px;
@@ -1135,7 +1163,6 @@ button {
   align-items: center;
   padding: 24px 0;
 }
-/*
 .modal-check {
 }
 
@@ -1157,7 +1184,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   margin: 0 auto;
-}*/
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
