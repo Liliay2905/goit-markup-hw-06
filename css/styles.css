@@ -15,11 +15,10 @@ h2,
 h3,
 h4,
 p {
-  margin-bottom: 0;
   margin-top: 0;
 }
 ul {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
@@ -30,14 +29,20 @@ a:hover {
 section {
   padding: 96px 0;
 }
-/* img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
-/*.card.no-gap {
-    display: block;
-  /* } */
+}
+.card.no-gap {
+  display: block;
+}
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -47,18 +52,23 @@ section {
   align-items: baseline;
   text-decoration: none;
 }
-/*
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding: 16px 0;
+  }
+}
+
 .header-container {
   display: flex;
   align-items: center;
-}*/
+}
 .header-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .header-logo {
-  display: inline;
+  /* display: inline; */
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -76,40 +86,57 @@ section {
 
 .logo-stu {
   color: #2e2f42;
-  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .header-menu-list {
-  position: absolute;
+  flex-direction: column;
+  color: #2e2f42;
+  line-height: normal;
+  display: flex;
+  /* position: absolute;
   width: 0;
-  height: 0;
-  visibility: hidden;
+  height: 0; */
+  /* visibility: hidden; */
   /* font-weight: 500;
   font-size: 16px;
-  color: #2e2f42;
+
   display: flex;
   gap: 24px; */
 }
+@media screen and (max-width: 767px) {
+  .header-menu-list {
+    display: none;
+  }
+}
+
 /*
 .header-menu-item {
 }*/
 .header-menu-lfirst {
-  display: flex;
-  position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
   color: #404bbf;
   position: relative;
 }
-.current::after {
+/* .current::after {
   content: "";
   position: absolute;
   background-color: #404bbf;
@@ -118,7 +145,7 @@ section {
   width: 100%;
   left: 0;
   bottom: -1px;
-}
+} */
 .header-menu-lfirst:hover {
   color: #404bbf;
 }
@@ -127,28 +154,57 @@ section {
 }
 
 .header-contact {
-  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+  margin-left: auto;
+  /* display: none; */
 }
-/*
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
 .header-contact-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/*
   display: flex;
   gap: 40px;
 }
 .header-contact-item {
-}
+}*/
 .header-contact-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  /* position: relative; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
-  font-size: 16px;
-  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}*/
+  background: #fff;
+  color: #434455;
+  font-size: 20px;
+  /* padding-top: 24px;
+  padding-bottom: 24px;
+  display: block; */
+  text-decoration: none;
+}
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: #404bbf;
 }
-
+/* .header-contact-link {
+  color: #4d5ae5;
+} */
 /*hero==========*/
 .hero {
   /* box-sizing: content-box; */
@@ -157,19 +213,20 @@ section {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/tab/efsoll1x.jpg);
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/tab/efsoll1x.jpg);
 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 72px 0;
   margin: auto;
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -725,10 +782,10 @@ img {
   fill: #fff;
 }
 
-.container {
+/* .container {
   margin: 0 auto;
   padding: 0 16px;
-}
+} */
 
 .backdrop {
   opacity: 0;
@@ -743,8 +800,8 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } /*/
-/* це внизурозкоментувала, перед тим лише модал відкривала */
-
+/* це внизу OPEN перед тим лише модал відкривала */
+/* 
 .backdrop.is-open {
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 1;
@@ -757,8 +814,8 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
-
+} */
+/* 
 .modal {
   position: fixed;
   background: #fcfcfc;
@@ -775,7 +832,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 /* потім це відкрити, 
 коли закінчу моб */
 .xbutton {
@@ -874,6 +931,8 @@ button {
   flex-direction: column;
   gap: 40px;
 }
+
+/* =======потрібно правильно налаштувати це кнопку і шапку моб, і моб меню!!! */
 .mob-close-button {
   position: absolute;
   top: 24px;
@@ -891,7 +950,11 @@ button {
   padding: 0;
   cursor: pointer;
 }
-
+@media screen and (min-width: 768px) {
+  .mob-close-button {
+    display: none;
+  }
+}
 .mob-close-button:hover,
 .mob-close-button:focus,
 .mob-close-button:active {
@@ -1157,12 +1220,7 @@ button {
   text-align: left;
   color: #2e2f42;
 }
-.container-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 0;
-}
+/* */
 .modal-check {
 }
 
@@ -1185,7 +1243,7 @@ button {
   display: block;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -1195,4 +1253,4 @@ button {
   .container {
     max-width: 1158px;
   }
-}
+} */
