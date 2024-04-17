@@ -61,10 +61,15 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-navigation {
   display: flex;
   align-items: center;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 17px 0;
   /* justify-content: space-between; */
 }
 .header-logo {
@@ -94,10 +99,11 @@ img {
 }
 
 .header-menu-list {
-  flex-direction: column;
+  display: none;
+  /* flex-direction: column;
   color: #2e2f42;
   line-height: normal;
-  display: flex;
+  display: flex; */
   /* position: absolute;
   width: 0;
   height: 0; */
@@ -161,7 +167,7 @@ img {
   color: #434455;
   font-style: normal;
   margin-left: auto;
-  /* display: none; */
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .header-contacts {
@@ -888,9 +894,84 @@ button {
 } */
 /* ===============menu mobil================ */
 .mob-menu-one {
-  display: flex;
-  padding: 16px 0;
+  /* display: flex;
+  padding: 16px 0; */
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 }
+
+@media screen and (min-width: 768px) {
+  .mob-menu-one {
+    display: none;
+  }
+  .header-logo {
+    /* display: flex; */
+    margin-right: 120px;
+  }
+  .header-navigation {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-menu-list {
+    gap: 24px;
+    display: flex;
+  }
+  .header-menu-item {
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-menu-item:hover .header-menu-item:focus {
+    color: #404bbf;
+  }
+  .current {
+    position: relative;
+    color: #404bbf;
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+    height: 4px;
+    width: 100%;
+  }
+  .header-contact {
+    display: block;
+    margin-left: 82px;
+    margin-right: 20px;
+  }
+  .header-contact-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-contact-link {
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 500;
+    color: #434455;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+  }
+  .header-contact-link:focus {
+    color: #404bbf;
+  }
+}
+
 .backdrop-mob {
   position: fixed;
   opacity: 0;
@@ -932,7 +1013,7 @@ button {
   gap: 40px;
 }
 
-/* =======потрібно правильно налаштувати це кнопку і шапку моб, і моб меню!!! */
+/* =======потрібно правильно налаштувати це кнопку і моб меню!!! */
 .mob-close-button {
   position: absolute;
   top: 24px;
@@ -1252,5 +1333,7 @@ button {
 @media screen and(min-width: 1158px) {
   .container {
     max-width: 1158px;
+     padding-left: 15px;
+    padding-right: 15px;
   }
 } */
