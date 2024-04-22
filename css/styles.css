@@ -1623,10 +1623,15 @@ width: calc((100% - 48px) / 3);
 }
 /* foot================ */
 .style {
-  display: flex;
-    align-items: baseline;
+   display: flex;
+  
+        align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0;
+    width: auto;
+
 }
-   
     .logo-f {
     margin-right: 120px;
 
