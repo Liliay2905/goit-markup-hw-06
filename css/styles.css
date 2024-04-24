@@ -741,7 +741,7 @@ img {
 .input-footer {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 288px;
+  width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 400;
@@ -1016,8 +1016,8 @@ button {
 
   /* strategy =================== */
   .conteiner-list {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    /* padding-top: 96px;
+    padding-bottom: 96px; */
   }
   .strategy-list {
     display: flex;
@@ -1049,13 +1049,13 @@ button {
     flex-direction: row;
     column-gap: 24px;
     row-gap: 48px;
-    gap: 64px;
+    gap: 64px 24px;
   }
 
   /* portfolio==================== */
 
   .portfolio {
-    padding: 120px 0 120px 0;
+    padding: 96px 0 96px 0;
     width: 100%;
   }
 
@@ -1063,7 +1063,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
     flex-direction: row;
   }
 
@@ -1077,11 +1077,14 @@ button {
     width: 620px;
   }
   .flow-logo {
-    display: inline-block;
+    /* display: inline-block; */
+    margin-top: 0;
   }
 
   .flow-icons {
-    display: inline-block;
+    /* display: inline-block; */
+    align-items: flex-start;
+    margin-top: 0;
   }
   .flow-icon-list {
     gap: 16px;
@@ -1115,14 +1118,15 @@ button {
     justify-content: flex-start;
     flex-wrap: wrap;
     column-gap: 0;
-    gap: 72px 24px;
+    /* gap: 72px 24px; */
   }
   .logo-f {
     margin-right: 24px;
   }
 
   .flow-icons {
-    margin-right: 24px;
+    /* margin-right: 24px; */
+    margin-bottom: 0;
   }
   .form-one {
     flex-direction: row;
