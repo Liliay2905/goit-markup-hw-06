@@ -16,6 +16,7 @@ h3,
 h4,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 ul {
   list-style-type: none;
@@ -27,9 +28,9 @@ a :hover {
   text-decoration: none;
 }
 section {
-  display: block;
-  unicode-bidi: isolate;
-  /* padding: 96px 0; */
+  /* display: block;
+  unicode-bidi: isolate; */
+  padding: 96px 0;
 }
 img {
   display: block;
@@ -319,7 +320,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* align-items: center;
   justify-content: flex-start;
   flex-direction: column; */
-  /* gap: 72px; */
+  gap: 72px;
 }
 
 .strategy-item {
@@ -351,6 +352,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-el {
+  display: none;
   /* position: absolute;
   visibility: hidden; */
 }
@@ -361,12 +363,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* team ====================*/
 .team {
   background-color: #f4f4fd;
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
-  padding: 120px 0;
+  gap: 32px; */
+  padding: 96px 0;
 }
 
 .team-title {
@@ -504,6 +506,7 @@ img {
 .portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -794,9 +797,9 @@ img {
   padding: 0 16px;
 } */
 
-.backdrop {
+.backdrop .is-open {
   /*зроблю модал закрию це*/
-  /* opacity: 0; */
+  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -809,7 +812,7 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-open {
-  opacity: 0;
+  opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
