@@ -30,7 +30,7 @@ a :hover {
 section {
   /* display: block;
   unicode-bidi: isolate; */
-  padding: 96px 0;
+  /* padding: 96px 0; */
 }
 img {
   display: block;
@@ -293,8 +293,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
 }
 .conteiner-list {
-  /* padding-top: 96px;
-  padding-bottom: 96px; */
+  padding: 96px 0;
 }
 
 /* strategy ===================*/
@@ -605,7 +604,7 @@ img {
 /*footer-flow===================*/
 .flow {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 .flow .container {
   /*  display: flex;
@@ -744,7 +743,7 @@ img {
 .input-footer {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 400;
@@ -797,7 +796,7 @@ img {
   padding: 0 16px;
 } */
 
-.backdrop .is-open {
+.backdrop {
   /*зроблю модал закрию це*/
   opacity: 1;
   position: fixed;
@@ -811,11 +810,6 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
 
 .modal {
   position: fixed;
@@ -828,7 +822,7 @@ img {
   max-height: 623px;
   margin: auto;
   border-radius: 4px;
-  padding: 72px 15px 24px 16px;
+  padding: 72px 16px 24px 16px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1024,7 +1018,7 @@ button {
   }
   .strategy-list {
     display: flex;
-    gap: 24px;
+    gap: 72px 24px;
     flex-wrap: wrap;
   }
 
@@ -1077,7 +1071,7 @@ button {
   /* foot============= */
   .style {
     gap: 24px;
-    width: 620px;
+    width: 564px;
   }
   .flow-logo {
     /* display: inline-block; */
@@ -1085,7 +1079,6 @@ button {
   }
 
   .flow-icons {
-    /* display: inline-block; */
     align-items: flex-start;
     margin-top: 0;
   }
@@ -1111,6 +1104,9 @@ button {
     flex-direction: column;
     align-items: start;
   }
+  .input-footer {
+    width: 264px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -1121,14 +1117,13 @@ button {
     justify-content: flex-start;
     flex-wrap: wrap;
     column-gap: 0;
-    /* gap: 72px 24px; */
+    gap: 72px 24px;
   }
   .logo-f {
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
 
   .flow-icons {
-    /* margin-right: 24px; */
     margin-bottom: 0;
   }
   .form-one {
@@ -1168,15 +1163,12 @@ button {
   opacity: 0;
   left: 0;
   top: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop-mob .is-open {
-  position: fixed;
-  opacity: 1;
-  pointer-events: auto;
+
+  /* pointer-events: auto; */
   visibility: visible;
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
@@ -1189,9 +1181,10 @@ button {
   background-color: white;
   padding: 72px 16px 40px;
   top: 0;
-  left: calc(50% - 160px);
+  left: 0;
+  /*calc(50% - 160px); */
   min-width: 320px;
-  width: 320px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1426,15 +1419,16 @@ button {
 }
 .text-privacy {
   cursor: pointer;
-  display: inline-flex;
+  /* display: inline-flex; */
   justify-content: center;
   fill: transparent;
   align-items: center;
   width: 16px;
   height: 16px;
+  flex-shrink: 0;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  margin-right: 6px;
+  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1477,7 +1471,7 @@ button {
   text-align: left;
   color: #2e2f42;
 }
-/* */
+
 .modal-check {
 }
 
@@ -1499,6 +1493,11 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   margin: 0 auto;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 @media screen and (min-width: 1158px) {
