@@ -130,7 +130,6 @@ img {
 }*/
 
 .header-menu-lfirst {
-  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -621,7 +620,7 @@ img {
 }
 
 .flow-logo {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -647,7 +646,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 264px;
+  /* max-width: 264px; */
 }
 
 .flow-subtitle-icon {
@@ -705,6 +704,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 }
 .flow-icons {
   display: flex;
@@ -796,7 +796,7 @@ img {
   padding: 0 16px;
 } */
 
-.backdrop {
+.backdrop /*.is-open */ {
   /*зроблю модал закрию це*/
   opacity: 1;
   position: fixed;
@@ -912,8 +912,8 @@ button {
     margin: 0 auto;
   }
   .header {
-    display: block;
-    padding-left: 16px;
+    /* display: block; */
+    /* padding-left: 16px; */
   }
   .header-container {
     display: flex;
@@ -960,9 +960,9 @@ button {
   }
   .header-contact {
     display: block;
-    margin-left: 82px;
+    /* margin-left: 82px; */
     /* margin-right: 20px; */
-    padding-left: 19px;
+    /* padding-left: 19px; */
   }
   .header-contact-list {
     display: flex;
@@ -981,7 +981,7 @@ button {
     letter-spacing: 0.04em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
-    margin-right: 40px;
+    /* margin-right: 40px; */
   }
   .header-contact-link:hover,
   .header-contact-link:focus {
@@ -1071,7 +1071,7 @@ button {
   /* foot============= */
   .style {
     gap: 24px;
-    width: 564px;
+    width: 584px;
   }
   .flow-logo {
     /* display: inline-block; */
@@ -1121,6 +1121,8 @@ button {
   }
   .logo-f {
     /* margin-right: 24px; */
+    width: 264px;
+    align-items: flex-start;
   }
 
   .flow-icons {
@@ -1419,7 +1421,7 @@ button {
 }
 .text-privacy {
   cursor: pointer;
-  /* display: inline-flex; */
+  display: flex;
   justify-content: center;
   fill: transparent;
   align-items: center;
@@ -1523,6 +1525,7 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    gap: 40px;
   }
   .header-contact-link {
     font-size: 16px;
@@ -1549,6 +1552,9 @@ button {
     margin: 0 auto;
   }
 
+  .hero-title {
+    margin: 0 auto 48px;
+  }
   /* strategy====================== */
 
   .conteiner-list {
@@ -1601,6 +1607,7 @@ button {
   }
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
   }
   /* foot================ */
   .style {
@@ -1610,14 +1617,15 @@ button {
     flex-direction: row;
     justify-content: flex-start;
     gap: 0;
-    width: auto;
   }
   .logo-f {
     margin-right: 120px;
+    width: 264px;
+    align-items: flex-start;
   }
   .flow-icons {
-    width: 208px;
     margin-right: 80px;
+    margin-bottom: 0;
   }
   .form-one {
     display: flex;
